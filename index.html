@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/e54b051731.js" crossorigin="anonymous"></script>
+    <title>HTML5 form Jeshuipa</title>
+</head>
+
+<body class="h-100 w-100">
+    <div class="container h-100 align-content-center">
+        <div class="card my-auto">
+            <div class="card-header">
+                <h3 class="Title m-2">Payment form example</h3>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-danger">Some fields are missing</div>
+
+                <fieldset class="row">
+                    <div class="mb-3 col-5">
+                        <label for="card-number" class="form-label">Card #</label>
+                        <input type="text" class="form-control" id="card-number" placeholder="XXXXXXXXXXXXXXXXX" />
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="CVC#" class="form-label">CVC#</label>
+                        <input type="text" class="form-control" id="CVC#" placeholder="000" />
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label for="Amount" class="form-label">Amount</label>
+                        <input type="text" class="form-control" id="Amount" placeholder="Amount" />
+                    </div>
+                </fieldset>
+                <!--SECOND FIELD SET (personal info)-->
+                <fieldset class="row">
+                    <div class="mb-3 col-6">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="irst-name" />
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" />
+                </fieldset>
+                <!--THIRD FIELD SET (address)-->
+                <fieldset class="row">
+                    <div class="mb-3 col-6">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" />
+                    </div>
+                    <div class="col-3">
+                        <label class="form-label" for="State" aria-placeholder="Pick a state">State</label>
+                        <select class="form-select" id="inlineFormSelectPref">
+                            <option selected>Pick a State</option>
+                            <option value="1">Amazonas </option>
+                            <option value="2">Anzoategui</option>
+                            <option value="3">Apure</option>
+                            <option value="4">Aragua</option>
+                            <option value="5">Barinas</option>
+                            <option value="6">Bolívar</option>
+                            <option value="7">Carabobo</option>
+                            <option value="8">Cojedes</option>
+                            <option value="9">Delta Amacuro</option>
+                            <option value="10">Distrito Federal</option>
+                            <option value="11">Falcón</option>
+                            <option value="12">Guarico</option>
+                            <option value="13">Lara</option>
+                            <option value="14">Mérida</option>
+                            <option value="15">Miranda</option>
+                            <option value="16">Monagas</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="postal-code" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="Amount" />
+                    </div>
+                </fieldset>
+                <!--FORTH FIELD SET (cards)-->
+                <div>
+                    <div class="row d-flex">
+                        <div class="col-6">
+                            <label>We accept:</label>
+                            <div class="alert bg-dark text-light w-50">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i
+                                            class="fa-brands fa-cc-mastercard"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i
+                                            class="fa-brands fa-cc-visa"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3" disabled>
+                                    <label class="form-check-label" for="inlineRadio3"><i
+                                            class="fa-brands fa-cc-paypal"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3" disabled>
+                                    <label class="form-check-label" for="inlineRadio4"><i
+                                            class="fa-brands fa-cc-diners-club"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div id="emailHelp" class="form-text">Add any notes here</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-footer d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary btn-sm  mx-2">Cancel</button>
+                <button type="button" class="btn btn-primary btn-sm">Send</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
